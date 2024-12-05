@@ -1,15 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const currentTime = new Date().toLocaleTimeString();
 Astro.response.headers.set(
 	'Cache-Control',
-	'public, s-maxage=60, stale-while-revalidate=30'
+	'public, s-maxage=600, stale-while-revalidate=300'
 );
 ---
 
 <Layout>
 	<h1>This page should be cached</h1>
-	<p>The current time is {currentTime}</p>
+	<p>Current time: <span id="time"></span></p>
+
+	<script>
+		document.getElementById('time')!.textContent =
+			new Date().toLocaleTimeString();
+	</script>
+
 	<a href="/">Home</a>
 	<a href="/no-cache">No Cache Page</a>
 </Layout>
