@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+export const prerender = false;
+const currentTime = new Date().toLocaleTimeString();
+---
+
+<Layout>
+	<h1>This page should be cached</h1>
+	<p>The current time is {currentTime}</p>
+	<a href="/">Home</a>
+	<a href="no-cache">No Cache Page</a>
+</Layout>
