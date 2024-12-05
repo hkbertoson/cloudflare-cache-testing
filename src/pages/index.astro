@@ -6,8 +6,6 @@ import Layout from '../layouts/Layout.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 
 const currentTime = new Date().toLocaleTimeString();
-
-Astro.response.headers.set('Cache-Control', 'public, max-age=3600');
 ---
 
 <Layout>
