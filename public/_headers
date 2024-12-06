@@ -1,2 +1,0 @@
-/cache
-  Cache-Control: max-age=600, stale-while-revalidate=30

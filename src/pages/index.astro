@@ -1,9 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import {getSession} from 'auth-astro/server';
+import {SignIn, SignOut} from 'auth-astro/components';
 import Layout from '../layouts/Layout.astro';
+const session = await getSession(Astro.request);
 ---
 
 <Layout>
-	<a href="cache">Cached Page</a>
-	<a href="no-cache">No Cache Page</a>
+	{
+		session ? (
+			<>
+				<p>Hello, {session.user?.name}!</p>
+				<SignOut> Logout </SignOut>
+			</>
+		) : (
+			<SignIn provider="github">Login with GitHub</SignIn>
+		)
+	}
 </Layout>
