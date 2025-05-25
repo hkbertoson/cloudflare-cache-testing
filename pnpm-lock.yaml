@@ -12,14 +12,14 @@ importers:
         specifier: ^12.0.1
         version: 12.5.3(@types/node@22.15.21)(astro@5.8.0(@types/node@22.15.21)(rollup@4.41.1)(typescript@5.7.2))
       '@auth/core':
-        specifier: ^0.37.4
-        version: 0.37.4
+        specifier: ^0.39.0
+        version: 0.39.1
       astro:
         specifier: ^5.0.3
         version: 5.8.0(@types/node@22.15.21)(rollup@4.41.1)(typescript@5.7.2)
       auth-astro:
         specifier: ^4.2.0
-        version: 4.2.0(@auth/core@0.37.4)(astro@5.8.0(@types/node@22.15.21)(rollup@4.41.1)(typescript@5.7.2))
+        version: 4.2.0(@auth/core@0.39.1)(astro@5.8.0(@types/node@22.15.21)(rollup@4.41.1)(typescript@5.7.2))
       cookie:
         specifier: ^1.0.2
         version: 1.0.2
@@ -51,8 +51,8 @@ packages:
   '@astrojs/underscore-redirects@0.6.1':
     resolution: {integrity: sha512-4bMLrs2KW+8/vHEE5Ffv2HbxCbbgXO+2N6MpoCsMXUlUoi7pgEEx8kbkzMXJ2dZtWF3gvwm9lvgjnFeanC2LGg==}
 
-  '@auth/core@0.37.4':
-    resolution: {integrity: sha512-HOXJwXWXQRhbBDHlMU0K/6FT1v+wjtzdKhsNg0ZN7/gne6XPsIrjZ4daMcFnbq0Z/vsAbYBinQhhua0d77v7qw==}
+  '@auth/core@0.39.1':
+    resolution: {integrity: sha512-McD8slui0oOA1pjR5sPjLPl5Zm//nLP/8T3kr8hxIsvNLvsiudYvPHhDFPjh1KcZ2nFxCkZmP6bRxaaPd/AnLA==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
       '@simplewebauthn/server': ^9.0.2
@@ -952,8 +952,8 @@ packages:
     resolution: {integrity: sha512-UcVfVfaK4Sc4m7X3dUSoHoozQGBEFeDC+zVo06t98xe8CzHSZZBekNXH+tu0NalHolcJ/QAGqS46Hef7QXBIMw==}
     engines: {node: '>=16'}
 
-  jose@5.9.6:
-    resolution: {integrity: sha512-AMlnetc9+CV9asI19zHmrgS/WYsWUwCn2R7RzlbJWD7F9eWYUTGyBmU9o6PxngtLGOiDGPRu+Uc4fhKzbpteZQ==}
+  jose@6.0.11:
+    resolution: {integrity: sha512-QxG7EaliDARm1O1S8BGakqncGT9s25bKL1WSf6/oa17Tkqwi8D2ZNglqCF+DsYF88/rV66Q/Q2mFAy697E1DUg==}
 
   js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -1160,8 +1160,8 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  oauth4webapi@3.1.4:
-    resolution: {integrity: sha512-eVfN3nZNbok2s/ROifO0UAc5G8nRoLSbrcKJ09OqmucgnhXEfdIQOR4gq1eJH1rN3gV7rNw62bDEgftsgFtBEg==}
+  oauth4webapi@3.5.1:
+    resolution: {integrity: sha512-txg/jZQwcbaF7PMJgY7aoxc9QuCxHVFMiEkDIJ60DwDz3PbtXPQnrzo+3X4IRYGChIwWLabRBRpf1k9hO9+xrQ==}
 
   ofetch@1.4.1:
     resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
@@ -1750,11 +1750,11 @@ snapshots:
 
   '@astrojs/underscore-redirects@0.6.1': {}
 
-  '@auth/core@0.37.4':
+  '@auth/core@0.39.1':
     dependencies:
       '@panva/hkdf': 1.2.1
-      jose: 5.9.6
-      oauth4webapi: 3.1.4
+      jose: 6.0.11
+      oauth4webapi: 3.5.1
       preact: 10.24.3
       preact-render-to-string: 6.5.11(preact@10.24.3)
 
@@ -2248,9 +2248,9 @@ snapshots:
       - uploadthing
       - yaml
 
-  auth-astro@4.2.0(@auth/core@0.37.4)(astro@5.8.0(@types/node@22.15.21)(rollup@4.41.1)(typescript@5.7.2)):
+  auth-astro@4.2.0(@auth/core@0.39.1)(astro@5.8.0(@types/node@22.15.21)(rollup@4.41.1)(typescript@5.7.2)):
     dependencies:
-      '@auth/core': 0.37.4
+      '@auth/core': 0.39.1
       astro: 5.8.0(@types/node@22.15.21)(rollup@4.41.1)(typescript@5.7.2)
       set-cookie-parser: 2.7.1
 
@@ -2600,7 +2600,7 @@ snapshots:
     dependencies:
       is-inside-container: 1.0.0
 
-  jose@5.9.6: {}
+  jose@6.0.11: {}
 
   js-yaml@4.1.0:
     dependencies:
@@ -2983,7 +2983,7 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  oauth4webapi@3.1.4: {}
+  oauth4webapi@3.5.1: {}
 
   ofetch@1.4.1:
     dependencies:
