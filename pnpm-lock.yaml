@@ -12,14 +12,14 @@ importers:
         specifier: ^12.0.1
         version: 12.5.4(@types/node@22.15.29)(astro@5.9.0(@types/node@22.15.29)(rollup@4.41.1)(typescript@5.7.2))
       '@auth/core':
-        specifier: ^0.39.0
-        version: 0.39.1
+        specifier: ^0.40.0
+        version: 0.40.0
       astro:
         specifier: ^5.0.3
         version: 5.9.0(@types/node@22.15.29)(rollup@4.41.1)(typescript@5.7.2)
       auth-astro:
         specifier: ^4.2.0
-        version: 4.2.0(@auth/core@0.39.1)(astro@5.9.0(@types/node@22.15.29)(rollup@4.41.1)(typescript@5.7.2))
+        version: 4.2.0(@auth/core@0.40.0)(astro@5.9.0(@types/node@22.15.29)(rollup@4.41.1)(typescript@5.7.2))
       cookie:
         specifier: ^1.0.2
         version: 1.0.2
@@ -51,8 +51,8 @@ packages:
   '@astrojs/underscore-redirects@0.6.1':
     resolution: {integrity: sha512-4bMLrs2KW+8/vHEE5Ffv2HbxCbbgXO+2N6MpoCsMXUlUoi7pgEEx8kbkzMXJ2dZtWF3gvwm9lvgjnFeanC2LGg==}
 
-  '@auth/core@0.39.1':
-    resolution: {integrity: sha512-McD8slui0oOA1pjR5sPjLPl5Zm//nLP/8T3kr8hxIsvNLvsiudYvPHhDFPjh1KcZ2nFxCkZmP6bRxaaPd/AnLA==}
+  '@auth/core@0.40.0':
+    resolution: {integrity: sha512-n53uJE0RH5SqZ7N1xZoMKekbHfQgjd0sAEyUbE+IYJnmuQkbvuZnXItCU7d+i7Fj8VGOgqvNO7Mw4YfBTlZeQw==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
       '@simplewebauthn/server': ^9.0.2
@@ -1905,7 +1905,7 @@ snapshots:
 
   '@astrojs/underscore-redirects@0.6.1': {}
 
-  '@auth/core@0.39.1':
+  '@auth/core@0.40.0':
     dependencies:
       '@panva/hkdf': 1.2.1
       jose: 6.0.11
@@ -2478,9 +2478,9 @@ snapshots:
       - uploadthing
       - yaml
 
-  auth-astro@4.2.0(@auth/core@0.39.1)(astro@5.9.0(@types/node@22.15.29)(rollup@4.41.1)(typescript@5.7.2)):
+  auth-astro@4.2.0(@auth/core@0.40.0)(astro@5.9.0(@types/node@22.15.29)(rollup@4.41.1)(typescript@5.7.2)):
     dependencies:
-      '@auth/core': 0.39.1
+      '@auth/core': 0.40.0
       astro: 5.9.0(@types/node@22.15.29)(rollup@4.41.1)(typescript@5.7.2)
       set-cookie-parser: 2.7.1
 
